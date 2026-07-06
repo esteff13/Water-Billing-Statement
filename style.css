@@ -1,0 +1,113 @@
+/* ===== Water Billing Statement System ===== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: linear-gradient(135deg, #eaf1fb 0%, #d6e4f7 100%);
+}
+
+.card {
+  width: 100%;
+  max-width: 480px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 32px 30px;
+  box-shadow: 0 14px 40px rgba(30, 70, 140, 0.18);
+}
+
+h1 {
+  text-align: center;
+  color: #1a73e8;
+  font-size: 1.5rem;
+  margin-bottom: 24px;
+  letter-spacing: 0.3px;
+}
+
+label {
+  display: block;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #1f2d3d;
+  margin: 14px 0 6px;
+}
+
+input,
+select {
+  width: 100%;
+  font-size: 0.95rem;
+  font-family: inherit;
+  padding: 11px 13px;
+  border: 1px solid #cdd7e5;
+  border-radius: 8px;
+  background: #fbfcfe;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #1a73e8;
+  box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.15);
+}
+
+button {
+  width: 100%;
+  margin-top: 22px;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  background: linear-gradient(180deg, #2a86f0 0%, #1a73e8 100%);
+  border: none;
+  border-radius: 8px;
+  padding: 13px;
+  cursor: pointer;
+  box-shadow: 0 5px 14px rgba(26, 115, 232, 0.35);
+  transition: transform 0.15s ease, filter 0.15s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.05);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+.counter {
+  margin: 20px 0 10px;
+  font-weight: 700;
+  color: #1a73e8;
+  font-size: 0.95rem;
+}
+
+.output {
+  min-height: 46px;
+  background: #eef4fd;
+  border-radius: 10px;
+  padding: 16px 18px;
+  font-family: "Consolas", "Courier New", monospace;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: #1f2d3d;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.output.error {
+  background: #fdecec;
+  color: #c0392b;
+  font-family: inherit;
+  font-weight: 600;
+}
